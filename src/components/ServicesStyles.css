@@ -1,0 +1,55 @@
+.services{
+    width: 100%;
+    padding: 5rem 1rem;
+    background-color: #000;
+}
+
+.services h2{
+    font-size: 1.8rem;
+    color: #eee;
+    text-align: center;
+    padding-bottom: 1.6rem;
+}
+
+.card-container{
+    max-width: 1140px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 40px;
+}
+
+.card{
+    border: 1px solid #eee;
+    border-radius: 8px;
+    color: #eee;
+    text-align: center;
+    padding: 1rem;
+    transition: 0.3s ease-in;
+}
+.card h3{
+    font-size: 1.4rem;
+    padding: 1rem;
+}
+.card p{
+    padding: 10px 0;
+}
+.card:hover{
+    background-color: #141414;
+    transform: scale(1.05);
+}
+
+.card .btn{
+    display: block;
+    width: 80%;
+    margin: 2rem auto;
+    border-radius: 8px;
+}
+
+@media screen and (max-width:768px){
+    .card-container{
+    max-width: 90%;
+    margin: auto;
+    grid-template-columns:1fr;
+}
+}
